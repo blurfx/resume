@@ -40,7 +40,7 @@ let useDarkModeConfig: UseDarkMode.darkModeConfig = {
 
 @react.component
 let make = () => {
-  let darkMode = UseDarkMode.use(~initialState=Some(false), ~config=Some(useDarkModeConfig))();
+  let darkMode = UseDarkMode.use(. ~initialState=Some(false), ~config=Some(useDarkModeConfig));
 
   let onClick= (_: ReactEvent.Mouse.t) => {
     darkMode.toggle();

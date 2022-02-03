@@ -18,4 +18,4 @@ type darkMode = {
 }
 
 @module("use-dark-mode")
-external use: (~initialState: option<bool>=?, ~config: option<darkModeConfig>=?, unit) => darkMode = "default"
+external use: (. ~initialState: option<bool>=?, ~config: option<darkModeConfig>=?) => darkMode = "default"
