@@ -1,0 +1,11 @@
+:root {
+  font-size: 14px;
+  --color-background: #fff;
+  --color-primary: #333;
+  --color-secondary: #111;
+  --color-tertiary: #ccc;
+}
+
+html, body {
+  background-color: var(--color-background);
+}
