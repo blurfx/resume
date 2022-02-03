@@ -1,8 +1,4 @@
-
-module StatusContainer = %styled.div((
-  ~backgroundColor=#var("color-primary"),
-  ~color=#var("color-tertiary")
-  ) => `
+module StatusContainer = %styled.div((~backgroundColor=#var("color-status-bg"), ~color=#var("color-status")) => `
   position: relative;
 
   margin-top: 1rem;
@@ -24,10 +20,12 @@ module StatusContainer = %styled.div((
     border-style: solid;
     border-width: 0 0.75rem 0.75rem 0.75rem;
     border-color: transparent;
-    border-bottom-color: $(backgroundColorGet);
+    border-bottom-color: $(backgroundColor);
 
     content: '';
   }
+
+  transition: color 0.2s, background-color 0.2s;
 `)
 
 @react.component

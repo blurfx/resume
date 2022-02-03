@@ -1,11 +1,23 @@
 :root {
   font-size: 14px;
-  --color-background: #fff;
+  --color-background: #f5f5f5;
   --color-primary: #333;
   --color-secondary: #111;
-  --color-tertiary: #ccc;
+  --color-status: #dfdfdf;
+  --color-status-bg: #3a3a3c;
+}
+
+:root.dark {
+  font-size: 14px;
+  --color-background: #222;
+  --color-primary: #eee;
+  --color-secondary: #bdbdbd;
+  --color-status: #ccc;
+  --color-status-bg: #606060;
 }
 
 html, body {
   background-color: var(--color-background);
+  color: var(--color-primary);
+  transition: color 0.2s, background-color 0.2s;
 }

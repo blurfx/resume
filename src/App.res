@@ -56,6 +56,7 @@ let contacts: array<Contact.contact> = [
 let make = () => {
   <main className="App">
     <Container>
+      <ThemeSwitch />
       <Profile />
       <Status />
       <About>
