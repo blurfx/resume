@@ -1,0 +1,24 @@
+{
+  "name": "resume",
+  "reason": { "react-jsx": 3 },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+    "@rescript/react",
+    "bs-css",
+    "bs-css-emotion"
+  ],
+  "ppx-flags": ["@davesnx/styled-ppx/ppx"]
+}
+  
