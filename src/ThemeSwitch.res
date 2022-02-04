@@ -29,7 +29,7 @@ module Button = %styled.button(`
 `)
 
 
-let useDarkModeConfig: UseDarkMode.darkModeConfig = {
+let useDarkModeConfig: DarkMode.config = {
   classNameDark: Some("dark"),
   classNameLight: Some("light"),
   element: ReactDOM.querySelector("html"),
@@ -40,7 +40,7 @@ let useDarkModeConfig: UseDarkMode.darkModeConfig = {
 
 @react.component
 let make = () => {
-  let darkMode = UseDarkMode.use(. ~initialState=Some(false), ~config=Some(useDarkModeConfig));
+  let darkMode = DarkMode.use(. Some(false), Some(useDarkModeConfig));
 
   let onClick= (_: ReactEvent.Mouse.t) => {
     darkMode.toggle();
